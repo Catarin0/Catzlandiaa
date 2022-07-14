@@ -11,7 +11,7 @@ const Header = () => {
   const handleDownload = () => {
     var a = document.createElement("a");
     a.href = "CV - Diogo Catarino.pdf";
-    a.setAttribute("download","CV - Diogo Catarino.pdf");
+    a.setAttribute("download", "CV - Diogo Catarino.pdf");
     a.click();
   };
 
@@ -61,13 +61,7 @@ const Header = () => {
             the following areas: Data Science, Cyber Security, Data Mining and
             Artificial Intelligence.
           </Text>
-          <Button
-            onClick={handleDownload}
-            href="profilepic.png"
-            download
-            mt={8}
-            colorScheme="blue"
-          >
+          <Button onClick={handleDownload} download mt={8} colorScheme="blue">
             Download CV
           </Button>
         </Box>
